@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { defineProps, computed,ref,defineEmits } from 'vue'
+import {  computed,ref, } from 'vue'
 // 接受父组件传值
 let props = defineProps({
   modelValue: Number,
@@ -46,7 +46,7 @@ const fontwidth = computed(() => `width:${width.value}em;`)
 
 // 子像父组件传递 
 // let emits = defineEmits(['update-rate'])  使用value
-let emits = defineEmits(['update:modelValue',num])   //使用v-model
+let emits = defineEmits(['update:modelValue'])   //使用v-model
 function onRate(num) {
 emits('update-rate',num)
 console.log(7777,num);
