@@ -1,16 +1,12 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <div>
-    <router-link to="/">首页</router-link> | 
-    <router-link to="/about">关于</router-link>
-  </div>
-  <router-view></router-view>
+  <el-container>
+    <router-view />
+  </el-container>
 </template>
 
+<script setup>
+</script>
 
-<style scoped>
+<style>
 
 </style>
