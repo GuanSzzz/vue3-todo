@@ -38,15 +38,15 @@ const router = createRouter({
 })
 
 
-router.beforeEach((to,from,next)=> {
-  let token=getToken()
-  const {fullPath} =to
-  if(fullPath==='/login') {
-    next()
-  }
-  if(!token) {
-    next('/login')
-  }
-  next()
-})
+// router.beforeEach((to,from,next)=> {
+//   let token=getToken()
+//   const {fullPath} =to
+//   if(fullPath==='/login') {
+//     next()
+//   }
+//   if(!token) {
+//     next('/login')
+//   }
+//   next()
+// })
 export default router
